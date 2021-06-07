@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" vocab="http://schema.org/" class="wk-notouch" style="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="mask-icon" href="images/favicon_package_v0.16/safari-pinned-tab.svg" color="#622e80">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" type="text/css" href="uikit/dist/css/uikit.min.css">
+    <link href="templates/theme.update.css" rel="stylesheet">
+    <script type="text/javascript" src="uikit/dist/js/uikit.min.js"></script>
+    <script src="uikit/dist/js/uikit-icons-flow.js"></script>
+    <script src="templates/theme.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-migrate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="templates/uikit2-0c5d3bb5.js"></script>
+    <script src="templates/wk-scripts-4adb31c6.js"></script>
+    <!-- Hotjar Tracking Code for https://devweb2019.cis.strath.ac.uk/~xrb17147/Prim -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2314109,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.onload = onboarding();
+            Array.prototype.slice.call(document.querySelectorAll('a span[id^="cloak"]')).forEach(function(span) {
+                span.innerText = span.textContent;
+            });
+        });
+    </script>
+</head>
+<body class>
+<div class="tm-page">
+    <div class="tm-header-mobile uk-hidden@s">
+            <nav uk-navbar="" class="uk-navbar">
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-toggle" href="#tm-mobile" uk-toggle="" aria-expanded="false">
+                        <span class="uk-margin-small-right"></span>
+                        <div uk-navbar-toggle-icon="" class="uk-icon uk-navbar-toggle-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg></div>
+                    </a>
+                </div>
+                <div class="uk-navbar-center">
+                    <h1 class="uk-h2 uk-margin-small uk-text-center uk-scrollspy-inview uk-animation-fade" uk-scrollspy-class="" style="">        Primavera   </h1>
+                </div>
+            </nav>
+        <div id="tm-mobile" class="uk-modal-full uk-modal" uk-modal="">
+            <div class="uk-modal-dialog uk-modal-body uk-text-center uk-flex uk-height-viewport">
+                <button class="uk-modal-close-full uk-icon uk-close" type="button" uk-close=""><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line></svg></button>
+                <div class="uk-margin-auto-vertical uk-width-1-1">
+                    <div class="uk-child-width-1-1 uk-grid uk-grid-stack" uk-grid="">
+                        <div class="uk-panel" id="module-menu-mobile">
+                            <ul class="uk-nav uk-nav-default uk-nav-center">
+                                <li class="uk-active"><a href="/~xrb17147/Primavera/profile.html">Profile</a></li>
+                                <li><a href="/~xrb17147/Primavera/privacy.html">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-overlap uk-section uk-section-small uk-padding-remove-bottom uk-padding-remove-top" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-fade; delay: false;">
+        <div class="uk-container">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin uk-grid uk-grid-stack" uk-grid="">
+                <div class="uk-width-1-1@m uk-first-column">
+                    <h1 class="uk-h2 uk-margin-small uk-text-center uk-scrollspy-inview uk-animation-fade uk-visible@m" uk-scrollspy-class="" style="">        Primavera   </h1>
+                    <div class="uk-panel uk-margin uk-width-large uk-margin-auto uk-text-center uk-scrollspy-inview uk-animation-fade" uk-scrollspy-class="" style="">To personalise your journey, we have a few more questions about anything that you might have identified as a problem.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-onboard" class="uk-flex-top" uk-modal bg-close="true" esc-close="true">
+        <div class="uk-modal-dialog uk-modal-full uk-margin-auto-vertical uk-height-xlarge uk-flex-center" style="background-color: #ffffff">
+            <button class="uk-modal-close-full uk-close-large" style="background-color: transparent;color: #662e80" type="button" uk-close></button>
+            <div style="background-image: url('images/lotus.png'); background-size: 5rem" alt="lotus" class="uk-background-norepeat uk-background-contain uk-background-bottom-right uk-section uk-section-xsmall uk-margin-large-top">
+                <div class="tm-grid-expand uk-child-width-1-1 uk-grid uk-grid-stack" uk-grid="" >
+                    <div class="uk-light uk-width-1-1@m uk-first-column" >
+                        <h2 class="uk-h2 uk-text-center@s uk-margin-small-left uk-scrollspy-inview uk-animation-fade" uk-scrollspy-class="" style="color:#622e80">Welcome to Primavera</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-padding">
+                <div class="uk-text-center uk-margin-medium">
+                    <p><span>Primavera is an app which aims to support women going through menopause or who want to prepare themselves before this period of their lives. </span></p>
+                    <p><span>An on-boarding questionnaire will help us understand your pain points and get a better insight of your health condition. Thus, we will be able to position you at the menopause journey map and then provide you with relevant information and techniques to guide you through your current stage in life.</span></p>
+                </div>
+            <div class="uk-flex uk-flex-center uk-margin-medium">
+                <button class="uk-button uk-button-primary uk-modal-close" type="button">Continue</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <hr class="uk-grid-divider uk-margin-medium uk-scrollspy-outview uk-animation-fade" uk-scrollspy-class="target: > div; cls: uk-animation-fade; delay: false" style="">
+    <div class="uk-section-default uk-section uk-section-xsmall">
+    <div class="uk-container">
+        <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin uk-grid uk-grid-stack" uk-grid="">
+            <div class="uk-width-1-1@m uk-first-column">
+                <div id="page#1-0-0-0">
+        <form id="form" class="uk-form">
+            <ul class="uk-subnav uk-flex uk-flex-center uk-margin-bottom" uk-switcher="animation:uk-animation-slide-top-medium, uk-animation-slide-bottom-medium" hidden="">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <!-- <li><a href="#">6</a></li> -->
+
+            </ul>
+            <ul id="switcher" class="uk-switcher uk-margin uk-list " style="touch-action: pan-y pinch-zoom;">
+                <!--Q1-->
+                <li class style>
+                    <div class="uk-text-meta uk-text-center uk-margin-small">Q1 of 5</div>
+                    <h3 class="mt-3 uk-text-primary uk-text-center uk-margin-remove">How would you describe your periods?</h3>
+                    <p class="uk-text-center uk-text-small uk-margin-medium-bottom uk-margin-remove-top">Select one</p>
+                    <div class="uk-text-left uk-width-1-3@l uk-align-center" >
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="radio" name="0" id="o0" value="0">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="o0">On a 28 day cycle or close to it</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="radio" name="0" id="o1" value="1">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="o1">It is difficult to predict but manageable</label>
+                        </div>
+                        <div class="form-check " data-children-count="1">
+                                    <input class="form-check-input" type="radio" name="0" id="o2" value="2">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="o2">They come any time and I cannot predict them</label>
+                        </div>
+                        <div class="form-check " data-children-count="1">
+                                    <input class="form-check-input" type="radio" name="0" id="o3" value="3">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="o3">I don't have them for almost a year</label>
+                        </div>
+                        <div class="form-check " data-children-count="1">
+                                    <input class="form-check-input" type="radio" name="0" id="o4" value="4">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="o4">I don't have them for more than a year</label>
+                        </div>
+                    </div>
+                    <div class="uk-margin-medium uk-text-center"><a id="btn-q1" class="uk-button uk-button-primary" href="#"
+                                                                    uk-switcher-item="next">Continue</a></div>
+                    <br/>
+                </li>
+                <!--Q2-->
+                <li class style>
+                    <div class="uk-text-meta uk-text-center uk-margin-small">Q2 of 5</div>
+                    <h3 class="mt-3 uk-text-primary uk-text-center uk-margin-remove">What changes in your complexion have you identified (if any)?</h3>
+                    <p class="uk-text-center uk-text-small uk-margin-medium-bottom uk-margin-remove-top">Select all that apply</p>
+                    <div class="uk-text-left uk-width-1-3@l uk-align-center">
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="1" id="qo0" value="0">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qo0">Dry skin</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="1" id="qo1" value="1">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qo1">Acne</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="1" id="qo2" value="2">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qo2">Sagging</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="1" id="qo3" value="3">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qo3">Scraggly facial hair</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="1" id="qo4" value="4">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qo4">None</label>
+                        </div>
+                    </div>
+
+                    <div class="uk-flex uk-flex-center uk-margin-medium">
+                        <a id="btn-b1" class="uk-button uk-button-default uk-margin-right" href="#" uk-switcher-item="previous">Back</a>
+                        <a id="btn-q2" class="uk-button uk-button-primary" href="#" uk-switcher-item="next">Continue</a>
+                    </div>
+                    <br/>
+                </li>
+                <!--Q3-->
+                <li class style>
+                    <div class="uk-text-meta uk-text-center uk-margin-small">Q3 of 5</div>
+                    <h3 class="mt-3 uk-text-primary uk-text-center uk-margin-remove">How did your menopause begin?</h3>
+                    <p class="uk-text-center uk-text-small uk-margin-medium-bottom uk-margin-remove-top">Select one.</p>
+                    <div class="uk-text-left uk-width-1-3@l uk-align-center">
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="radio" name="2" id="qn0" value="0">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qn0">Naturally</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="radio" name="2" id="qn1" value="1">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qn1">Due to hysterectomy</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="radio" name="2" id="qn2" value="2">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qn2">Due to chemotherapy</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="radio" name="2" id="qn3" value="3">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qn3">It has not began yet</label>
+                        </div>
+                    </div>
+
+                    <div class="uk-flex uk-flex-center uk-margin-medium">
+                        <a id="btn-b3" class="uk-button uk-button-default uk-margin-right" href="#" uk-switcher-item="previous">Back</a>
+                        <a id="btn-q4" class="uk-button uk-button-primary" href="#" uk-switcher-item="next">Continue</a>
+                    </div>
+                    <br/>
+                </li>
+                <!--Q4-->
+                <li id="symptQs" class style>
+                    <div class="uk-text-meta uk-text-center uk-margin-small">Q4 of 5</div>
+                    <h3 class="mt-3 uk-text-primary uk-text-center uk-margin-remove">What are your symptoms (if any)?</h3>
+                    <p class="uk-text-center uk-text-small uk-margin-medium-bottom uk-margin-remove-top">Select all that apply</p>
+                    <div class="uk-text-left uk-width-1-3@l uk-align-center">
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="3" id="qs0" value="0">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qs0">Hot flashes</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="3" id="qs1" value="1">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qs1">Insomnia</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="3" id="qs2" value="2">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qs2">Night sweats</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="3" id="qs3" value="3">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qs3">Low mood or Depression</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="3" id="qs4" value="4">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qs4">Anxiety</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="3" id="qs5" value="5">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qs5">Brain fog</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="3" id="qs6" value="6">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qs6">Urinary problems</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="3" id="qs7" value="7">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qs7">Joint pain</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="3" id="qs8" value="8">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qs8">Low libido</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="3" id="qs9" value="9">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qs9">Weight gain</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="3" id="qs10" value="10">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qs10">Memory problems</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="3" id="qs11" value="11">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qs11">Muscle pain</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="checkbox" name="3" id="qs12" value="12">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qs12">None</label>
+                        </div>
+
+                    <div class="uk-flex uk-flex-center uk-margin-medium">
+                        <a id="btn-b2" class="uk-button uk-button-default uk-margin-right" href="#" uk-switcher-item="previous">Back</a>
+                        <a id="btn-q3" class="uk-button uk-button-primary" href="#" uk-switcher-item="next">Continue</a>
+                    </div>
+                    </div>
+                    <br/>
+                </li>
+                <!--Q5 Use this for single -->
+                <li class style>
+                    <div class="uk-text-meta uk-text-center uk-margin-small">Q5 of 5</div>
+                    <h3 class="mt-3 uk-text-primary uk-text-center uk-margin-remove">Have you been confirmed you are in menopause by a doctor?</h3>
+                    <p class="uk-text-center uk-text-small uk-margin-medium-bottom uk-margin-remove-top">Select one</p>
+                    <div class="uk-text-left uk-width-1-3@l uk-align-center">
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="radio" name="4" id="qi0" value="0">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qi0">Yes</label>
+                        </div>
+                        <div class="form-check" data-children-count="1">
+                                    <input class="form-check-input" type="radio" name="4" id="qi1" value="1">
+                                    <label class="form-check-label uk-h4 uk-padding-small" style="color:#666" for="qi1">No</label>
+                        </div>
+
+                    <div class="uk-flex uk-flex-center uk-margin-medium">
+                        <a id="btn-b6" class="uk-button uk-button-default uk-margin-right" href="#" uk-switcher-item="previous">Back</a>
+                        <button type="submit" id="btn-submit" class="uk-button uk-button-primary">Show result</button>
+                    </div>
+                    </div>
+                        <br/>
+                </li>
+            </ul>
+        </form>
+
+        <div id="loader-modal" class="uk-flex-top" uk-modal bg-close="false" esc-close="false" >
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical" style="background-color: #ffffff">
+
+                <div class="uk-text-lead uk-text-bold uk-text-center">Please wait</div>
+
+                <div class="loader-cups uk-margin-medium" data-alt="loading"></div>
+
+                <div class="uk-text-center">We're analysing your answers and placing your experience on the menopause journey.</div>
+
+            </div>
+        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    (function () {
+        "use strict";
+
+        let weights = {
+            'worse': -2,
+            'same': 0,
+            'better': 2
+        };
+
+        let menopausephase = [
+            {
+                'name': 'Perimenopause',
+                'url': '/~xrb17147/Primavera/perimenopause.html',
+            },
+            {
+                'name': 'Menopause',
+                'url': '/~xrb17147/Primavera/menopause.html',
+            },
+            {
+                'name': 'Post-menopause',
+                'url': '/~xrb17147/Primavera/postmenopause.html',
+            },
+            {
+                'name': 'Not in menopause',
+                'url': '/~xrb17147/Primavera/not-in-menopause.html',
+            },
+
+        ];
+
+        let questions = [
+            {
+                "title": "How would you describe your periods? \nSelect one.",
+                "options": [
+                    {
+                        "title": "On a 28 day cycle or close to it",
+                        "weights": ['same', 'worse', 'worse', 'better']
+                    },
+                    {
+                        "title": "It is difficult to predict but manageable",
+                        "weights": ['same', 'same', 'worse', 'better']
+                    },
+                    {
+                        "title": "They come any time and I cannot predict them",
+                        "weights": ['better', 'same', 'worse', 'worse']
+                    },
+                    {
+                        "title": "I don't have them for almost a year",
+                        "weights": ['worse', 'better', 'same', 'worse']
+                    },
+                    {
+                        "title": "I don't have them for more than a year",
+                        "weights": ['worse', 'same', 'better', 'worse']
+                    },
+                ],
+            },
+            {
+                "title": "What changes in your complexion have you identified (if any)? \nSelect all that apply.",
+                "options": [
+                    {
+                        "title": "Dry skin",
+                        "weights": ['better', 'better', 'same', 'worse']
+                    },
+                    {
+                        "title": "Acne",
+                        "weights": ['same', 'same', 'worse', 'worse']
+                    },
+                    {
+                        "title": "Sagging",
+                        "weights": ['same', 'same', 'same', 'worse']
+                    },
+                    {
+                        "title": "Scraggly facial hair",
+                        "weights": ['same', 'better', 'better', 'worse']
+                    },
+                    {
+                        "title": "None",
+                        "weights": ['worse', 'same', 'better', 'better']
+                    },
+                ],
+            },
+            {
+                "title": "How did your menopause begin? \nSelect one.",
+                "options": [
+                    {
+                        "title": "Naturally",
+                        "weights": ['better', 'better', 'better', 'worse']
+                    },
+                    {
+                        "title": "Due to hysterectomy",
+                        "weights": ['better', 'better', 'better', 'worse']
+                    },
+                    {
+                        "title": "Due to chemotherapy",
+                        "weights": ['better', 'better', 'better', 'worse']
+                    },
+                    {
+                        "title": "It has not began yet",
+                        "weights": ['worse', 'worse', 'worse', 'better']
+                    },
+                ],
+            },
+            {
+                "title": "What are your symptoms (if any)? \nSelect all that apply.",
+                "options": [
+                    {
+                        "title": "Hot flashes",
+                        "weights": ['better', 'better', 'better', 'same']
+                    },
+                    {
+                        "title": "Insomnia",
+                        "weights": ['same', 'same', 'same', 'same']
+                    },
+                    {
+                        "title": "Night sweats",
+                        "weights": ['better', 'better', 'same', 'same']
+                    },
+                    {
+                        "title": "Low mood or Depression",
+                        "weights": ['better', 'same', 'same', 'same']
+                    },
+                    {
+                        "title": "Anxiety",
+                        "weights": ['same', 'same', 'same', 'same']
+                    },
+                    {
+                        "title": "Brain fog",
+                        "weights": ['same', 'same', 'same', 'same']
+                    },
+                    {
+                        "title": "Urinary problems",
+                        "weights": ['better', 'same', 'same', 'same']
+                    },
+                    {
+                        "title": "Joint pain",
+                        "weights": ['better', 'same', 'same', 'same']
+                    },
+                    {
+                        "title": "Low libido",
+                        "weights": ['better', 'same', 'same', 'same']
+                    },
+                    {
+                        "title": "Weight gain",
+                        "weights": ['better', 'better', 'same', 'same']
+                    },
+                    {
+                        "title": "Memory problems",
+                        "weights": ['same', 'same', 'better', 'same']
+                    },
+                    {
+                        "title": "Muscle pain",
+                        "weights": ['better', 'same', 'same', 'same']
+                    },
+                    {
+                        "title": "None",
+                        "weights": ['worse', 'worse', 'better', 'better']
+                    },
+                ],
+            },
+            {
+                "title": "Have you been confirmed you are in menopause by a doctor? \nSelect one.",
+                "options": [
+                    {
+                        "title": "Yes",
+                        "weights": ['same', 'better', 'better', 'worse']
+                    },
+                    {
+                        "title": "No",
+                        "weights": ['same', 'same', 'same', 'better']
+                    },
+                ],
+            },
+        ];
+
+
+
+        // this is the core part
+        let calcScores = function (inputScore, questions) {
+            let scoresPerPhase = [];
+
+            let weightByTitle = function (title) {
+                return weights[title] || 0
+            };
+
+            menopausephase.forEach(function (phase, phaseIdx) {
+                questions.forEach(function (question, questionIdx) {
+                    question.options.forEach(function (option, optionIdx) {
+                        scoresPerPhase[phaseIdx] = scoresPerPhase[phaseIdx] || [];
+                        scoresPerPhase[phaseIdx].push(inputScore[questionIdx][optionIdx] * weightByTitle(option.weights[phaseIdx]));
+                    });
+                });
+            });
+
+            return scoresPerPhase.map(function (scores) {
+                return scores.reduce(function (carry, value) {
+                    return carry + value
+                });
+            });
+        };
+
+
+        let getScoresFromTheForm = function () {
+            let scores = [
+                [0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0],
+                [0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0]
+            ];
+
+            let data = jQuery('#form').serializeArray();
+
+            data.forEach(function (input) {
+                let idx = parseInt(input.name);
+                let val = parseInt(input.value);
+
+                if (!scores[idx]) return;
+
+                scores[idx][val] = 1;
+
+            });
+
+            return scores;
+
+        };
+
+        let getValuesFromTheForm = function () {
+            let scores = [
+                [0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0],
+                [0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0]
+            ];
+
+            let data = jQuery('#form').serializeArray();
+            let list = [];
+            let type = [];
+
+            data.forEach(function (input) {
+                let idx = parseInt(input.name);
+                let val = parseInt(input.value);
+
+                if (!scores[idx]) return;
+
+                scores[idx][val] = 1;
+
+                if (idx === 3) {
+                    list.push(val);
+                }
+            });
+
+            if(list.includes(0) || list.includes(1) || list.includes(2)) {
+                type.push("vasomotor");
+            }
+            if (list.includes(3) || list.includes(4) || list.includes(5) || list.includes(10)){
+                type.push("psychological");
+            }
+            if (list.includes(7) || list.includes(9) || list.includes(11)){
+                type.push("physical");
+            }
+            if (list.includes(6)){
+                type.push("urinary");
+            }
+            if (list.includes(8)){
+                type.push("sex drive");
+            }
+            if (list.includes(12)){
+                type.push("all");
+            }
+            if (list.includes(9)){
+                type.push("weight-gain");
+            }
+
+            console.log("types:", type);
+            return type;
+
+        };
+
+
+        jQuery('#form').submit(function (event) {
+            event.preventDefault();
+
+            let inputScores = getScoresFromTheForm();
+            let values = getValuesFromTheForm();
+            let scorePerPhase = calcScores(inputScores, questions);
+
+
+            // console.log('MenopausePhase:', menopausephase.map(m => m.name));
+            // console.log('Scores:', scorePerPhase);
+
+
+            let maxScore = scorePerPhase.reduce(function (a, b) {
+                return Math.max(a, b)
+            });
+            let maxScoreID = scorePerPhase.indexOf(maxScore);
+            let phase = null;
+
+            let countOfMaxScores = scorePerPhase.filter(function (score) {
+                return score === maxScore
+            }).length;
+
+            if (countOfMaxScores > 1) {
+                // console.info('You have ' + countOfMaxScores + ' equally good options:');
+                let matchedPhases = [];
+                let matchedPhasesIdxs = [];
+
+                scorePerPhase.map(function (score, idx) {
+                    if (score === maxScore) {
+                        matchedPhases.push(menopausephase[idx]);
+                        matchedPhasesIdxs.push(idx);
+                        console.log(menopausephase[idx].name);
+                    }
+                });
+
+                let scorePerPhaseMenopauseOnly = calcScores([inputScores[inputScores.length - 1]], [questions[questions.length - 1]]);
+
+                scorePerPhaseMenopauseOnly = scorePerPhaseMenopauseOnly.filter(function (v, k) {
+                    return matchedPhasesIdxs.indexOf(k) > -1;
+                });
+
+                maxScore = scorePerPhaseMenopauseOnly.reduce(function (a, b) {
+                    return Math.max(a, b)
+                });
+
+                if ((new Set(scorePerPhaseMenopauseOnly)).size > 1) {
+                    maxScoreID = scorePerPhaseMenopauseOnly.indexOf(maxScore);
+                } else {
+                    maxScoreID = scorePerPhaseMenopauseOnly.lastIndexOf(maxScore);
+                }
+
+                phase = matchedPhases[maxScoreID];
+            } else {
+                phase = menopausephase[maxScoreID];
+            }
+
+            let loaderModal = document.getElementById('loader-modal');
+            UIkit.modal(loaderModal).show();
+
+            setTimeout(function () {
+                document.location.href = phase.url + '?r=' + countOfMaxScores;
+                //document.getElementById('symptom-section').className += phase.className;
+            }, 3800);
+
+            let arrayJSON = JSON.stringify(values);
+            localStorage.setItem("values", arrayJSON);
+
+            return false;
+
+        });
+
+
+        let items = document.querySelectorAll('[uk-switcher-item="next"]');
+        for (let i = 0; i < items.length; ++i) {
+            let el = items[i];
+            el.addEventListener('click', function () {
+                document.getElementById('switcher').scrollIntoView();
+            });
+        }
+
+
+    })();
+
+    let onboarding = function(){
+        let modalonboard = document.getElementById('modal-onboard');
+        UIkit.modal(modalonboard).show();
+
+    };
+
+</script>
+<style>#page\#1-0-0-0 .uk-checkbox, #page\#1-0-0-0 .uk-radio, #page\#1-0-0-0 input[type="checkbox"]:not([class*=uk-]), #page\#1-0-0-0 input[type="radio" i]:not([class*=uk-]) { content: '';  left: 0; top: 0; width: 1.4em; height: 1.4em; border: 1px solid #aaa; background: #FFF; border-radius: .2em; -webkit-transition: all .275s; transition: all .275s;} #page\#1-0-0-0 .uk-radio:checked, #page\#1-0-0-0 input[type="radio" i]:not([class*=uk-]):checked { content: '✕'; top: .525em; left: .18em; color: #662e80; line-height: 0; -webkit-transition: all .2s; transition: all .2s;} #page\#1-0-0-0 .uk-checkbox:checked, #page\#1-0-0-0 input[type=checkbox]:not([class*=uk-]):checked {content: '✕';top: .525em;left: .18em;color: #62e80;line-height: 0;-webkit-transition: all .2s;transition: all .2s; } #page\#1-0-0-0 .uk-card-secondary.uk-card-hover:hover { color: #fff; } .loader-cups { height:100px; background-repeat: no-repeat; background-position: center; background-image:url('images/294.gif')}</style>
+</body>
+</html>
